@@ -14,7 +14,7 @@ body {
 }
 .container {
 
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -30,6 +30,13 @@ body {
         min-height: 70vh;
         display: flex;
         align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
 }
 
 .menu {
@@ -56,11 +63,10 @@ body {
 
 .menu .navbar ul li a {
 font-size: 18px;
-padding: 30px;
+padding: 20px;
 color: #FFFDFC;
 display: block;
 font-weight: 600;
-
 }
 
 .menu .navbar ul li a:hover{
@@ -87,7 +93,7 @@ font-weight: 600;
 .header-content h1{
     font-size: 75px;
     line-height: 80px;
-    color: #f9fafc;
+    color: #A47148;
     text-transform: uppercase;
     margin-bottom: 35px;
 }
@@ -95,7 +101,7 @@ font-weight: 600;
 .header-content p {
     font-size: 16px;
     color: #c5c5c5;
-    padding: 0 250px;
+    padding: 0 20px;
     margin-bottom: 25px;
 }
 
@@ -128,14 +134,14 @@ position: relative;
     line-height: 70px;
     color: #323337;
     text-transform: uppercase;
-    padding: 0 250px;
+    padding: 0 20px;
     margin-bottom: 15px;
 }
 
 .txt-p {
     font-size: 16px;
     color: #414247;
-    padding: 0 250px;
+    padding: 0 20px;
     margin-bottom: 35px;
 }
 
@@ -146,7 +152,7 @@ position: relative;
 }
 
 .Comercial-1 {
-    padding: 0 100px;
+    padding: 20px 0;
 }
 
 .Comercial-1 img {
@@ -186,7 +192,7 @@ position: relative;
 .servicios-content h2 {
     font-size: 55px;
     line-height: 70px;
-    color: #f9fafc;
+   color: #A47148;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
@@ -195,7 +201,7 @@ position: relative;
     font-size: 16px;
     color: #c5c5c5;
     margin-bottom: 50px;
-    padding: 0 100px;
+    padding: 0 20px;
 }
 
 .servicios-group {
@@ -205,7 +211,7 @@ position: relative;
 }
 
 .servicios-1 {
-    padding: 0px 100px;    
+    padding: 20px 0;    
 }
 
 .servicios-1 img {
@@ -221,21 +227,17 @@ position: relative;
 
 .general {
     display: flex;
+    flex-direction: column;
 }
  
 .general-1 {
-    width: 50%;
-    padding: 100px 250px 100px 100px;
+    width: 100%;
+    padding: 40px 20px;
     background-color: #e1e2e6;
+    text-align: center;
 }
 
-.general-2 {
-    background-image: url(img/Entrada-Aidamar.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-}
+
 
 .general-3 {
     background-image: url(img/Napoles.png);
@@ -243,6 +245,7 @@ position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
+    display: none;
 }
 
 h2 {
@@ -270,7 +273,7 @@ p {
 }
 
 .blog-1 {
-    padding: 15px 55px;
+    padding: 20px 20px;
 }
 
 .face{
@@ -304,6 +307,10 @@ p {
     justify-content: space-between;
 }
 
+.link {
+    padding: 20px 0;
+}
+
 .link h3 {
     font-size: 18px;
     color: #f9fafc;
@@ -320,6 +327,70 @@ p {
 .link a:hover{
     color: #8B5E34;
 }
+
+@media (max-width: 560px) {
+ .menu .navbar ul li a {
+font-size: 18px;
+padding: 10px;
+color: #FFFDFC;
+display: block;
+font-weight: 600;
+}
+  
+}
+
+@media (max-width: 768px) {
+ 
+    .Comercial-group{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .servicios-group{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-content{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 10px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    padding: 20px 0;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #f9fafc;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link a:hover{
+    color: #8B5E34;
+}
+  }
+
 @media(max-width:991px) {
     .menu {
         padding: 30px;
@@ -405,14 +476,35 @@ flex-direction: column;
     }
 
     .footer {
-padding: 30px;
-    }
+    padding: 10px 0;
+    background-color: #000000;
+}
 
-    .footer-content {
-     flex-direction: column;
-     text-align: center;
-    }
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
 
+.link {
+    padding: 20px 0;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #f9fafc;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link a:hover{
+    color: #8B5E34;
+}
 }
 
 

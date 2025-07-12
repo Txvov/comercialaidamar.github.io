@@ -1,18 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos Aidamar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios - Comercial Aidamar</title>
+  <link rel="icon" type="image/png" href="img/Logo.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    nav {
+      background-color:#A47148;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.2s;
+    }
+
+    nav li a:hover {
+      color: #fab175;
+    }
+
+    header {
+      background-color: #A47148;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 2em;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .intro p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 20px;
+      gap: 40px;
+    }
+
+    .formulario,
+    .info-contacto {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 320px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .formulario h2,
+    .info-contacto h2 {
+      margin-bottom: 15px;
+      color: #A47148;
+    }
+
+    .formulario input,
+    .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .formulario button {
+      background-color: #A47148;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .formulario button:hover {
+      background-color: #864F2E;
+    }
+
+    .info-contacto p {
+      margin-bottom: 10px;
+    }
+
+    .redes-sociales a {
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
+      color: #A47148;
+    }
+
+    .redes-sociales a:hover {
+      color: #FAB175;
+    }
+ @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+    }
+  </style>
 </head>
 <body>
-    <a href="index.html">Inicio</a>
-    <h1>Los Contactos proporcionados</h1>
-    <h3>Son espesificamente para contactar y pedir informaci&oacute;n sobre producto deseado, se le pide
-        al estimado cliente no hacer bromas u ofender a los empleados.
-    </h3>
-    <h3>GRACIAS POR SU ATENCI&Oacute;N</h3>
-    <a target="_blank" href="https://wa.link/jq5bsq">Contactar n&uacute;mero de Aidamar-(33409274)</a><br>
-    <a target="_blank" href="mailto:aidamarventas@gmail.com">Correo Electronico-(aidamarventas@gmail.com)</a>
+
+    <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="SERVICIOS.html">Servicios</a></li>
+      <li><a href="PRODUCTOS.html">Productos</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Contáctanos – Comercial Aidamar</h1>
+  </header>
+
+  <div class="intro">
+    <p>
+      Si deseas más información sobre nuestros muebles y equipos de oficina,
+      solicitar una cotización o recibir asesoría personalizada, no dudes en escribirnos.
+      ¡Estamos aquí para atenderte!
+    </p>
+  </div>
+
+  <div class="contact-section">
+    <div class="formulario">
+      <h2>Formulario de contacto</h2>
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <input type="text" placeholder="Número de WhatsApp" />
+      <textarea rows="5" placeholder="Mensaje (máximo 500 caracteres)"></textarea>
+      <button>Enviar mensaje</button>
+    </div>
+
+    <div class="info-contacto">
+      <h2>Información de contacto</h2>
+      <p><strong>Dirección:</strong><br>Ciudad de Danl&iacute;, en el Barrio Tierra Blanca,<br> entrada principal a la Colonia 16 de Mayo. </p>
+      <p><strong>Teléfono:</strong> +504 3393-9737</p>
+      <div class="redes-sociales">
+       <a target="_blank" href="https://www.facebook.com/Aidamar.hn">Facebook</a>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
